@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicación Flask</title>
+</head>
+<body>
+    <h1>¡Hola desde la Raspberry Pi!</h1>
+    
+    <button onclick="showTable()">Mostrar Tabla</button>
+    
+    <table id="myTable" style="display:none;">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>25</td>
+        </tr>
+    </table>
+    
+    <script>
+        function showTable() {
+            var table = document.getElementById("myTable");
+            if (table.style.display === "none") {
+                table.style.display = "block";
+            } else {
+                table.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
